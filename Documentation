@@ -1,0 +1,44 @@
+**Documentation for the Code: 
+
+Class: Person
+The Person class represents an individual with various attributes such as name, gender, age, height, weight, and muscle mass. It includes methods to calculate scores for each attribute and an overall attractiveness message based on these scores.
+
+Attributes
+name (String): The name of the person.
+gender (String): The gender of the person.
+age (int): The age of the person.
+height (double): The height of the person.
+weight (double): The weight of the person.
+muscleMass (int): The muscle mass rating of the person.
+Methods
+heightScoreCalculator(): Calculates a score based on the height of the person.
+weightScoreCalculator(): Calculates a score based on the weight of the person.
+ageScoreCalculator(): Calculates a score based on the age of the person.
+muscleMassScoreCalculator(): Calculates a score based on the muscle mass rating of the person.
+totalScoreCalculator(): Calculates the total attractiveness score by summing up the scores from all attributes.
+get attractivenessMessage: Generates an attractiveness message based on the total score and gender of the person.
+Function: main()
+The main function is the entry point of the Flutter application. It runs the MyApp widget.
+
+Class: MyApp
+The MyApp class is a StatelessWidget representing the root of the Flutter application. It sets the app's title and theme and displays the HomePage widget.
+
+Class: HomePage
+The HomePage class is a StatefulWidget responsible for displaying the user interface where users can input their information to calculate their attractiveness score.
+
+Attributes
+nameController: A TextEditingController for the name input field.
+genderValue: The selected gender from the dropdown.
+ageController: A TextEditingController for the age input field.
+heightController: A TextEditingController for the height input field.
+weightController: A TextEditingController for the weight input field.
+muscleMassController: A TextEditingController for the muscle mass input field.
+errorMessage: A string to store error messages to be displayed to the user.
+Methods
+_calculateAttractiveness(): Calculates the attractiveness score and displays the result as a dialog.
+_validateName(name): Validates the input name using a regular expression.
+_validateAge(age): Validates the input age to ensure it's within a valid range.
+_validateHeight(height): Validates the input height to ensure it's within a valid range.
+_validateWeight(weight): Validates the input weight to ensure it's within a valid range.
+_validateMuscleMass(muscleMass): Validates the input muscle mass to ensure it's within a valid range.
+_showResultDialog(message): Displays a dialog with the provided message.
